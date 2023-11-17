@@ -1,6 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { FaWhatsapp } from "react-icons/fa";
-import { RiInstagramLine } from "react-icons/ri";
 
 import React from "react";
 
@@ -11,24 +9,16 @@ function App() {
     <div className="bg-gradient-to-r from-sky-300 to-emerald-200 h-screen px-[12%] pt-10">
       <header className="flex justify-between h-10 items-center">
         <img src={logo} className="h-24 w-24" />
-        <div className="flex">
+        <div>
           <a
             href="https://api.whatsapp.com/send/?phone=5521995229284&text=Olá! Preciso de ajuda.&type=phone_number&app_absent=0"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="bg-green-500 w-36 h-9 ml-4 rounded-full flex items-center justify-center hover:bg-green-600 duration-[500ms] hover:duration-[500ms]">
-              <p className="text-xl">Contato</p>
+            <button className="bg-green-500 w-44 h-9 ml-4 rounded-full flex items-center justify-center hover:bg-green-600 duration-[500ms] hover:duration-[500ms]">
+              <p className="text-xl">Whatsapp</p>
               <FaWhatsapp className="h-7 w-7 ml-2"/>
             </button>
-          </a>
-          <a
-            href="https://www.instagram.com/hedartesoficial/"
-            target="_blank"
-            className="ml-4 hover:text-[#FF0069] hover:duration-500 duration-500"
-            rel="noreferrer"
-          >
-            <RiInstagramLine className="h-10 w-10" />
           </a>
         </div>
       </header>
