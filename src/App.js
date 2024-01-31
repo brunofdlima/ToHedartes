@@ -1,34 +1,49 @@
 import { FaWhatsapp } from "react-icons/fa";
 
+import ImageCarousel from "./components/Carousel";
+import { Items } from "./components/Items";
+
 import React from "react";
 
 const logo = require("./img/hedartes.png");
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-sky-300 to-emerald-200 h-screen px-[12%] pt-10">
-      <header className="flex justify-between h-10 items-center">
-        <img src={logo} className="h-24 w-24" />
+    <div>
+      <header className="flex justify-between h-36 items-center bg-gradient-to-r from-sky-300 to-emerald-200 px-[20%] pt-1 w-screen">
+        <img src={logo} className="h-24 w-24" alt="logo" />
         <div>
           <a
             href="https://api.whatsapp.com/send/?phone=5521995229284&text=Olá! Preciso de ajuda.&type=phone_number&app_absent=0"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="bg-green-500 w-44 h-9 ml-4 rounded-full flex items-center justify-center hover:bg-green-600 duration-[500ms] hover:duration-[500ms]">
-              <p className="text-xl">Whatsapp</p>
-              <FaWhatsapp className="h-7 w-7 ml-2"/>
+            <button className="bg-white border transition duration-1000 border-1 p-[0.3125rem] relative w-48 h-9 text-[1.0625rem] rounded-full group flex justify-center hover:bg-[#008000]">
+              <p className="absolute font-bold transition text-[#008000] transform group-hover:-translate-x-5 group-hover:text-white duration-1000">
+                Whatsapp
+              </p>
+              <FaWhatsapp className="absolute top-[0.45em] right-[0.5em] opacity-0 mr-6 transition h-[1em] fill-[#fff] group-hover:opacity-100 duration-1000" />
             </button>
           </a>
         </div>
       </header>
-      <section className="body">
-        <div className="h-[700px] rounded-xl mt-14 bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex justify-center items-center">
-          <div className="font-bold">CONTEÚDO AQUI</div>
-        </div>
+      <div className="bg-[#65B2C1] h-20 flex px-[20%] w-screen">
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+        <Items name="Icon"></Items>
+      </div>
+      <section className="body w-screen">
+        <ImageCarousel />
       </section>
       <footer className="text-sm mt-10">
-        Copyright © 2023 github.com/brunofdlima.
+        Copyright © 2024 github.com/brunofdlima.
       </footer>
     </div>
   );
