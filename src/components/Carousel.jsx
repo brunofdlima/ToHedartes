@@ -15,10 +15,10 @@ const ImageCarousel = () => {
       showThumbs={false}
     >
       <div>
-        <img src={banner1} alt="Imagem 1" />
+        <img src={banner1} alt="Imagem 3" />
       </div>
       <div>
-        <img src={banner2} alt="Imagem 2" />
+        <img src={banner2} alt="Imagem 1" />
       </div>
     </Carousel>
   );
