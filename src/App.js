@@ -28,14 +28,12 @@ function App() {
           <a href="https://www.instagram.com/hed.artes.oficial/" target="blank"><FaInstagram className="h-10 w-14 text-pink-500 hover:text-pink-700 duration-500"/></a>
         </div>
       </header>
-      <div className="bg-[#65B2C1] h-28 flex-col px-[20%] w-screen">
+      <div className="bg-gradient-to-r from-sky-300 to-emerald-200 opacity-90 h-20 flex-col px-[15%] w-screen">
         <div className="flex justify-between">
         <Buttom name="Curso corel" link="https://drive.google.com/drive/folders/1Zq2aeZUU2OEcQRR2Nbe2H3c7Dx6se6wT?usp=drive_link"></Buttom>
         <Buttom name="Reset impressora"></Buttom>
         <Buttom name="Dicas sublimação" link="https://drive.google.com/drive/folders/1DwlOYtGzt60Gd8xgOoS3rW1jfYcp9rdV?usp=sharing"></Buttom>
         <Buttom name="Grupos whatsapp"></Buttom>
-        </div>
-        <div className="flex justify-between">
         <Buttom name="Programas"></Buttom>
         <Buttom name="Para membros"></Buttom>
         <Buttom name="Fornecedores"></Buttom>
