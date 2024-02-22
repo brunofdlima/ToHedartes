@@ -10,9 +10,10 @@ const ImageCarousel = () => {
     <Carousel
       autoPlay={true}
       infiniteLoop={true}
-      interval={4000}
+      interval={3500}
       showArrows={false}
       showThumbs={false}
+      showIndicators={false}
     >
       <div>
         <img src={banner1} alt="Imagem 3" />
